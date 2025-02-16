@@ -7,7 +7,25 @@
     <title>Image Color Picker</title>
 </head>
 <body>
-    
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌙 Dark Mode</button>
+    </div>
+
+    <div class="container">
+        <label for="imageInput" class="upload-btn">Upload Image</label>
+        <input type="file" id="imageInput" accept="image/*" hidden>
+
+        <div class="image-container">
+            <img id="image" src="" alt="Upload an image" style="display: none;">
+        </div>
+
+        <div id="colorInfo" class="color-info" style="display: none;">
+            <p><strong>Selected Color:</strong></p>
+            <div id="colorBox" class="color-box"></div>
+            <p><strong>RGB:</strong> <span id="rgbValue"></span></p>
+            <p><strong>HEX:</strong> <span id="hexValue"></span></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
