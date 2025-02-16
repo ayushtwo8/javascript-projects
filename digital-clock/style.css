@@ -29,11 +29,33 @@ body.dark-mode {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: none;
+    background: #4CAF50;
+    color: white;
     border: none;
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+#themeButton:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+#themeButton:active {
+    transform: scale(0.95);
+}
+
+body.dark-mode #themeButton {
+    background: #ff9800;
+}
+
+body.dark-mode #themeButton:hover {
+    background: #e68900;
 }
 
 #dayIntro {
